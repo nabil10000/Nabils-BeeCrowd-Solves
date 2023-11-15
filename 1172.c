@@ -1,17 +1,19 @@
 #include<stdio.h>
+
 int main()
 {
-    int ara[10],i;
-
-        for(i=0;i<10;i++)
-        {
-            scanf("%d",&ara[i]);
-            if(ara[i]<=0)
-                printf("X[%d] = 1\n",i);
-            else
-                printf("X[%d] = %d",i,ara[i]);
-        }
-
-
+    int a[10],b,i,j;
+    for(i=0;i<10;i++){
+    scanf("%d",&b);
+    if(b>0){
+    a[i]=b;
+    }
+    else{
+    a[i]=1;
+    }
+    }
+    for(j=0;j<10;j++){
+    printf("X[%d] = %d\n",j,a[j]);
+    }
     return 0;
 }
