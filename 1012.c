@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include<math.h>
 
-float main (){
+int  main (){
   double a, b, c, areatriangulo, circulo, trapezio, quadrado, retangulo, pi;
   pi = 3.14159;
   scanf("%lf %lf %lf", &a, &b, &c);
 
   areatriangulo = (a*c)/2;
-  circulo = pi*c*c;
+  circulo = pi(pow(c,2));
   trapezio = ((a + b)*c)/2;
   quadrado = b*b;
   retangulo = a*b;
